@@ -1,0 +1,134 @@
+/* Global style */
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-grey: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    background-color: var(--very-light-grey);
+    /* margin: 0 auto; */
+    color: var(--very-light-grey);
+}
+
+/* Typography */
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+
+.link-button {
+    background-color: var(--very-light-grey);
+    padding: 1em 2em;
+    margin-top: 7em;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    text-align: center;
+    /* margin-bottom: 1em; */
+}
+
+.link-button:hover,
+.link-button:focus {
+    border: 2px solid var(--very-light-grey);
+}
+
+.link-button-1 {
+    color: var(--bright-orange);
+}
+
+.link-button-2 {
+    color: var(--dark-cyan);
+}
+
+.link-button-3 {
+    color: var(--very-dark-cyan);
+}
+
+.link-button-1:hover,
+.link-button-1:focus {
+    background-color: var(--bright-orange);
+    color: var(--very-light-grey);
+}
+
+.link-button-2:hover,
+.link-button-2:focus {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-grey);
+}
+
+.link-button-3:hover,
+.link-button-3:focus {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-grey);
+}
+
+/* Layout */
+
+.container {
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 8em;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.column {
+    padding: 3em 2.8em;
+}
+
+.col-1 {
+    background-color: var(--bright-orange);
+}
+
+.col-2 {
+    background-color: var(--dark-cyan);
+}
+
+.col-3 {
+    background-color: var(--very-dark-cyan);
+}
+
+section p {
+    line-height: 1.8;
+    font-size: 0.91rem;
+}
+
+
+@media (max-width: 840px) {
+
+    .container {
+        flex-direction: column;
+        max-width: 320px;
+        margin-top: 6em;
+        margin-bottom: 6em;
+    }
+
+    h2 {
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+
+    .link-button {
+        margin-top: 2em;
+        padding: 0.9em 1.9em;
+    }
+}
